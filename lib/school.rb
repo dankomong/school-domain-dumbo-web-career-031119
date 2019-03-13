@@ -18,7 +18,9 @@ class School
   def sort
     @roster.each do |grade, arr|
       arr.each do |name|
-        name.split(" ")
+        if name.split(" ").length > 1
+          
+        end
       end
     end
   end
