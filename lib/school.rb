@@ -17,7 +17,9 @@ class School
   
   def sort
     @roster.each do |grade, arr|
-      arr.sort
+      arr.each do |name|
+        name.split(" ")
+      end
     end
   end
 end
