@@ -16,9 +16,9 @@ class School
   end
   
   def sort
-    @roster.each do |grade, arr|
+    sorted_arr = @roster.map do |grade, arr|
       arr.sort {|a, b| a[0] <=> b[0]}
     end
   end
-  
+
 end
