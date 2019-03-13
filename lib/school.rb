@@ -9,6 +9,8 @@ class School
     if @roster == {}
       @roster[grade] = []
       @roster[grade].push(name)
+    else
+      @roster[grade].push(name)
     end
   end
 end
