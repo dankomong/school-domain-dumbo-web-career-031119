@@ -19,7 +19,7 @@ class School
     @roster.each do |grade, arr|
       arr.each do |name|
         if name.split(" ").length > 1
-          
+          name = name[0]
         end
       end
     end
