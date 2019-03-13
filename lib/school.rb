@@ -17,7 +17,7 @@ class School
   
   def sort
     @roster.each do |grade, arr|
-      arr.sort 
+      arr.sort {|a, b| a[0] <=> b[0]}
     end
   end
   
